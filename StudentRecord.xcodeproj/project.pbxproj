@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC2E54A71C2807E20080DE04 /* CoreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E54A61C2807E20080DE04 /* CoreDataHandler.m */; };
+		FC2E54A91C280B0D0080DE04 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FC2E54A81C280B0D0080DE04 /* README.md */; };
 		FC50A1191C23D28E009F125F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50A1181C23D28E009F125F /* main.m */; };
 		FC50A11C1C23D28E009F125F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50A11B1C23D28E009F125F /* AppDelegate.m */; };
 		FC50A1221C23D28E009F125F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC50A1201C23D28E009F125F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		FC2E54A51C2807E20080DE04 /* CoreDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHandler.h; sourceTree = "<group>"; };
 		FC2E54A61C2807E20080DE04 /* CoreDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHandler.m; sourceTree = "<group>"; };
+		FC2E54A81C280B0D0080DE04 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FC50A1141C23D28E009F125F /* StudentRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC50A1181C23D28E009F125F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC50A11A1C23D28E009F125F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,8 +34,8 @@
 		FC50A1281C23D28E009F125F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC50A12F1C23D654009F125F /* StudentsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentsModel.xcdatamodel; sourceTree = "<group>"; };
 		FC50A1311C23D6E2009F125F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FC50A13B1C23D90D009F125F /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Students.h; sourceTree = "<group>"; };
-		FC50A13C1C23D90D009F125F /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Students.m; sourceTree = "<group>"; };
+		FC50A13B1C23D90D009F125F /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Students.h; path = ../Students.h; sourceTree = "<group>"; };
+		FC50A13C1C23D90D009F125F /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Students.m; path = ../Students.m; sourceTree = "<group>"; };
 		FC50A1481C23DCC0009F125F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		FC50A1491C23DCC0009F125F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +64,7 @@
 		FC50A10B1C23D28E009F125F = {
 			isa = PBXGroup;
 			children = (
-				FC50A13B1C23D90D009F125F /* Students.h */,
-				FC50A13C1C23D90D009F125F /* Students.m */,
+				FC2E54A81C280B0D0080DE04 /* README.md */,
 				FC50A1311C23D6E2009F125F /* CoreData.framework */,
 				FC50A1161C23D28E009F125F /* StudentRecord */,
 				FC50A1151C23D28E009F125F /* Products */,
@@ -81,6 +82,8 @@
 		FC50A1161C23D28E009F125F /* StudentRecord */ = {
 			isa = PBXGroup;
 			children = (
+				FC50A13B1C23D90D009F125F /* Students.h */,
+				FC50A13C1C23D90D009F125F /* Students.m */,
 				FC2E54A41C2807E20080DE04 /* CoreDataHandler */,
 				FC50A11A1C23D28E009F125F /* AppDelegate.h */,
 				FC50A11B1C23D28E009F125F /* AppDelegate.m */,
@@ -114,6 +117,8 @@
 				FC50A1101C23D28E009F125F /* Sources */,
 				FC50A1111C23D28E009F125F /* Frameworks */,
 				FC50A1121C23D28E009F125F /* Resources */,
+				FC2E54AA1C280B630080DE04 /* ShellScript */,
+				FC2E54AB1C280B6B0080DE04 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,6 +174,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FC2E54AA1C280B630080DE04 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		FC2E54AB1C280B6B0080DE04 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "VERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC50A1101C23D28E009F125F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -177,6 +211,7 @@
 				FC50A14A1C23DCC0009F125F /* TableViewController.m in Sources */,
 				FC2E54A71C2807E20080DE04 /* CoreDataHandler.m in Sources */,
 				FC50A1301C23D654009F125F /* StudentsModel.xcdatamodeld in Sources */,
+				FC2E54A91C280B0D0080DE04 /* README.md in Sources */,
 				FC50A11C1C23D28E009F125F /* AppDelegate.m in Sources */,
 				FC50A1191C23D28E009F125F /* main.m in Sources */,
 				FC50A13E1C23D90D009F125F /* Students.m in Sources */,
