@@ -1,0 +1,2 @@
+# EasyCoreData
+[Home](wiki/Home)
